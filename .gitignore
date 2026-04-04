@@ -98,21 +98,21 @@ InitTestScene*.unity*
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 
-# VRChat SDK cache
-Assets/VRCSDK/
-Assets/Udon/
-Assets/VRCWorldAssetCache/
-
 # Unity generated
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-*.pidb.meta
-*.pdb.meta
+
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+
+# VRChat SDK cache
+social_vr/Assets/VRCSDK/
+social_vr/Assets/Udon/
+social_vr/Assets/VRCWorldAssetCache/
 
 # OS
 .DS_Store
 Thumbs.db
+
