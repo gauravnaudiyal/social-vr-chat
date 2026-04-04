@@ -2,13 +2,14 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-
-public class quizpopup : MonoBehaviour
+using Photon.Pun;
+public class quizpopup : MonoBehaviourPun //MonoBehaviour
 {
     [Header("UI Refs")]
     public TMP_Text questionText;
     public Button[] answerButtons;       // assign 3 buttons in Inspector
     public TMP_Text feedbackText;
+    public GameObject panel; 
 
     [Header("Questions")]
     string[] questions = {
@@ -72,5 +73,16 @@ public class quizpopup : MonoBehaviour
         }
     }
 
-    public void ToggleQuiz() => gameObject.SetActive(!gameObject.activeSelf);
+    // public void ToggleQuiz() => gameObject.SetActive(!gameObject.activeSelf);
+    public void ToggleQuiz()
+    {
+        photonView.RPC("RPC_ToggleQuiz", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void RPC_ToggleQuiz()
+    {
+        panel.SetActive(!panel.activeSelf);
+    }
+
 }
