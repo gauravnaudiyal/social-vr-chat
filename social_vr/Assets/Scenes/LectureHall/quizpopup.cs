@@ -84,6 +84,7 @@ int[] correctIndex = { 1, 1, 0, 0, 1, 0, 1, 1, 2, 2 };
             questionText.text = "Quiz Complete!";
             feedbackText.text = "";
             foreach (var b in answerButtons) b.gameObject.SetActive(false);
+            Invoke(nameof(HideQuiz), 3f); // disappears after 3 sec
         }
     }
 
@@ -98,5 +99,11 @@ int[] correctIndex = { 1, 1, 0, 0, 1, 0, 1, 1, 2, 2 };
     {
         panel.SetActive(!panel.activeSelf);
     }
+
+    void HideQuiz()
+    // hides locally for each user that finished
+{
+    panel.SetActive(false); // local only, no RPC
+}
 
 }
