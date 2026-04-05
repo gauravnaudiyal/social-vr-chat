@@ -39,7 +39,10 @@ string[][] options = {
 int[] correctIndex = { 1, 1, 0, 0, 1, 0, 1, 1, 2, 2 };
 
     int current = 0;
-
+    void Awake()
+    {
+        panel.SetActive(false);
+    }
     void OnEnable()
     {
         feedbackText.text = "";
