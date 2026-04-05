@@ -13,16 +13,30 @@ public class quizpopup : MonoBehaviourPun //MonoBehaviour
 
     [Header("Questions")]
     string[] questions = {
-        "What year did Einstein publish Special Relativity?",
-        "What is Newton's 2nd Law?",
-        "Speed of light (approx)?"
-    };
-    string[][] options = {
-        new[]{ "1895", "1905", "1915" },
-        new[]{ "F = ma", "E = mc²", "F = mv" },
-        new[]{ "3×10⁸ m/s", "3×10⁶ m/s", "3×10¹⁰ m/s" }
-    };
-    int[] correctIndex = { 1, 0, 0 };   // index of correct answer per question
+    "What does XR stand for?",
+    "What does VR block out completely?",
+    "What does AR overlay onto?",
+    "What does FOV stand for?",
+    "What is a common XR input method?",
+    "What does CV stand for in tech?",
+    "Is it ethical to track users without consent?",
+    "What does HTTPS protect against?",
+    "Who is responsible for AI bias?",
+    "What does CPU stand for?"
+};
+string[][] options = {
+    new[]{ "Extra Reality", "Extended Reality", "External Rendering" },
+    new[]{ "Sound", "The real world", "Touch" },
+    new[]{ "The real world", "A screen", "A headset" },
+    new[]{ "Field Of View", "Frame Of Video", "Focus Of Vision" },
+    new[]{ "Keyboard", "Hand tracking", "Mouse" },
+    new[]{ "Computer Vision", "Core Video", "Color Values" },
+    new[]{ "Yes, for safety", "No, it violates privacy", "Only if anonymous" },
+    new[]{ "Slow connections", "Eavesdropping", "Viruses" },
+    new[]{ "The data", "The developers", "Everyone involved" },
+    new[]{ "Central Process Unit", "Core Processing Unit", "Central Processing Unit" }
+};
+int[] correctIndex = { 1, 1, 0, 0, 1, 0, 1, 1, 2, 2 };
 
     int current = 0;
 
@@ -51,12 +65,12 @@ public class quizpopup : MonoBehaviourPun //MonoBehaviour
     {
         if (chosen == correctIndex[current])
         {
-            feedbackText.text = "✅ Correct!";
+            feedbackText.text = "Correct!";
             Invoke(nameof(NextQuestion), 1.2f);
         }
         else
         {
-            feedbackText.text = "❌ Try again";
+            feedbackText.text = "Try again";
         }
     }
 
@@ -67,7 +81,7 @@ public class quizpopup : MonoBehaviourPun //MonoBehaviour
             LoadQuestion(next);
         else
         {
-            questionText.text = "🎉 Quiz Complete!";
+            questionText.text = "Quiz Complete!";
             feedbackText.text = "";
             foreach (var b in answerButtons) b.gameObject.SetActive(false);
         }
