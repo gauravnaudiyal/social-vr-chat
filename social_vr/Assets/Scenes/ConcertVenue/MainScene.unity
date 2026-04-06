@@ -1110,6 +1110,7 @@ GameObject:
   - component: {fileID: 1651610917}
   - component: {fileID: 1651610916}
   - component: {fileID: 1651610915}
+  - component: {fileID: 1651610918}
   m_Layer: 0
   m_Name: MicrophoneHead
   m_TagString: Untagged
@@ -1314,6 +1315,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1651610918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651610913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9580dcda49a58499a9992f0e80b998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MicrophoneGrab
+  musicSource: {fileID: 208807763}
+  normalVolume: 0.6
+  grabbedVolume: 0.1
+  fadeSpeed: 2
 --- !u!1001 &2079452127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1582,7 +1599,7 @@ GameObject:
   - component: {fileID: 208807764}
   m_Layer: 0
   m_Name: microphone
-  m_TagString: Untagged
+  m_TagString: BackgroundMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
