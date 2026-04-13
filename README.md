@@ -1,7 +1,7 @@
-# Social VR  VRChat World Project
+# Social VR  Horizons World Project
 **Module:** Extended Reality | Trinity College Dublin  
-**Platform:** VRChat  
-**Engine:** Unity + VRChat World SDK + UdonSharp
+**Platform:** Horizon World
+**Engine:** Unity
 
 ## Scenes
 -  Office — Interactable whiteboard with real-time sync
