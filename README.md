@@ -1,51 +1,36 @@
-# Social VR Chat 🌐🥽
+# Social VR Chat
 
-An XR/VR project built in **Unity** featuring **3 themed virtual worlds** for multiplayer communication. Originally developed for VRChat and later migrated to **Meta Horizons**.
+An XR project built in Unity for multiplayer communication across three themed virtual environments. Originally built for VRChat and later moved over to Meta Horizon Worlds. This was a module project for the XR course at Trinity College Dublin.
 
-## Overview
+The interesting challenge here was not just building the environments but making them feel like places people would actually want to hang out in, rather than just empty rooms with avatars floating around.
 
-Social VR Chat is a multiplayer virtual reality experience where users can meet, communicate, and interact in immersive themed environments. This project was built as part of the XR module at Trinity College Dublin, exploring the design and implementation of social VR spaces.
+## Scenes
 
-## Scenes / Themes
-
-- 🏢 **Office** — Interactable whiteboard with real-time sync, collaborative workspace
-- 🌲 **Nature / Outdoor** — Relaxed open-world environment for casual social interaction
-- 🎨 **Abstract / Art Space** — Creative themed environment for expressive interaction
-
-> Each world supports multiplayer communication via Meta Horizon Worlds networking.
+- Office: interactable whiteboard with real-time sync, collaborative workspace feel
+- Nature: a more relaxed outdoor environment for casual interaction
+- Abstract/Art Space: a creative environment with a different vibe from the other two
 
 ## Features
 
-- 👥 **Multiplayer** — Real-time social interaction in VR using Meta Horizon Worlds
-- 🎨 **3 Themed Worlds** — Unique environments, each with distinct aesthetics
-- 🗣️ **Spatial Audio** — Proximity-based voice for natural conversations
-- 📱 **Platform Migration** — Designed for VRChat, ported to Meta Horizon Worlds
-- 💻 **Interactive Elements** — In-world objects and interactions per scene
+- Multiplayer via Meta Horizon Worlds networking
+- Spatial audio with proximity-based voice
+- Avatar support
+- Interactive in-world objects per scene
 
-## Tech Stack
+## Built with
 
-| Tool | Purpose |
-|------|---------|
-| Unity | Game engine & world building |
-| C# | Scripting |
-| Meta Horizon Worlds SDK | Social VR platform |
-| Meta XR SDK | Oculus headset integration |
-| Blender / Mixamo | Asset creation & animation |
+- Unity (2022.3+)
+- C#
+- Meta Horizon Worlds SDK
+- Meta XR SDK
+- Blender and Mixamo for assets
 
-## Getting Started
+## Getting started
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/gauravnaudiyal/social-vr-chat.git
-   ```
-2. Open in Unity Hub (Unity 2022.3+ recommended)
-3. Import the Meta XR All-in-One SDK via Package Manager
-4. Open a scene from the `Scenes/` folder and press **Play** or deploy to a Quest headset
+```bash
+git clone https://github.com/gauravnaudiyal/social-vr-chat.git
+```
 
-## Academic Context
+Open in Unity Hub, import the Meta XR All-in-One SDK via Package Manager, open a scene from `Scenes/` and hit Play. You will need a Meta Quest headset for the full experience.
 
-Developed as a coursework project for the **XR (Extended Reality)** module in the MSc Computer Science programme at Trinity College Dublin.
-
----
-
-*Developed by [Gaurav Naudiyal](https://github.com/gauravnaudiyal) — MSc Computer Science, Trinity College Dublin*
+Developed by Gaurav Naudiyal, MSc Computer Science, Trinity College Dublin.
